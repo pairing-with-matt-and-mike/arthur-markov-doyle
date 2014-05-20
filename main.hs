@@ -59,16 +59,3 @@ choice :: [a] -> IO a
 choice l = do
        i <- getStdRandom (randomR (0, (length l) - 1))
        return $ l !! i
-
--- The cat sat on the mat.
---
--- ^ The
--- The cat
--- cat sat
--- sat on
--- on the
--- the mat
--- mat .
-
--- I am now!
--- Are you following along?
